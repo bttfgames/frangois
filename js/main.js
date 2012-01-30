@@ -437,6 +437,7 @@ var HUDSpiritObject = me.HUD_Item.extend({
 
     draw: function (c, b, d) {
         var a = this.pos.x;
+		if (this.value >=8) this.value = 8;
 		this.spiritIcon = me.loader.getImage("barra-a-"+this.value);
         c.drawImage(this.spiritIcon, a, this.pos.y);
     }
