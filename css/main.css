@@ -1,0 +1,78 @@
+/* CSS do iframe */
+body{
+	background:
+	  linear-gradient(63deg, #151515 5px, transparent 5px) 0 5px,
+	  linear-gradient(243deg, #151515 5px, transparent 5px) 10px 0px,
+	  linear-gradient(63deg, #222 5px, transparent 5px) 0px 10px,
+	  linear-gradient(243deg, #222 5px, transparent 5px) 10px 5px,
+	  linear-gradient(0deg, #1b1b1b 10px, transparent 10px),
+	  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+	background-color: #131313;
+	background-size: 20px 20px;
+	margin:0;
+}
+
+#slideshow{
+    width: 640px;
+    height: 480px;
+}
+
+#help{
+	width:640px;
+	height:140px;
+	border-radius: 10px;
+	display:none;
+	font-family: Helvetica;
+	background: #ffa84c; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #ffa84c 0%, #ff7b0d 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #ffa84c 0%,#ff7b0d 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #ffa84c 0%,#ff7b0d 100%); /* IE10+ */
+	background: radial-gradient(center, ellipse cover, #ffa84c 0%,#ff7b0d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#help h1{
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	text-shadow: 0 2px 2px #000;
+}
+
+#help ul{
+	list-style:none;
+}
+
+#container{
+	width:640px;
+	
+}
+
+#history{
+	width:640px;
+	height:480px;
+	display:none;
+}
+
+#jsapp{
+	border:5px solid #222;
+    background:#fff;
+    display:none;
+    width:640px;
+    height:480px;
+	box-shadow:0 4px 10px #000;
+}
+.screen1{
+    background:#ff9900;
+
+}
+
+.screen2{
+    background:#ff0000;
+
+}
+.screen3{
+    background:#0000ff;
+}

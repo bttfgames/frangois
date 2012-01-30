@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>FUCHSIA</title>
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    </head>
+	<script type="text/javascript" src="js/melonJS-0.9.2-min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+       $(document).ready(function(){
+            $("#jsapp").empty();
+            $('#slideshow').cycle({
+                fx:      'fade',
+                timeout:  100,
+                autostop: 1,
+                end: function() {
+                    $("#slideshow").fadeOut('fast', function(){
+						$("#history").fadeIn('fast');
+						var history = setTimeout(function() {	
+							$("#jsapp").show('slow');
+							$("#jsapp").append('<script src="js/main.js" type="text/javascript" \/><\/script>' + 
+											   '<script src="js/entities.js" type="text\/javascript" ><\/script>');
+							$("#help").fadeIn('slow');
+							$("#history").hide();
+						},6000);
+						
+						
+					});
+					
+                }
+            });
+			
+			
+
+
+        });
+    </script>
+
+    <body>
+
+        <div id="container" >	
+			
+			<div id="slideshow">
+			   <img src="images/1.jpg" />
+			   <img src="images/2.jpg" />
+			</div>
+	
+			<div id="history">
+				<img src="images/3.png" />
+			</div>
+			
+			<div id="jsapp"></div>
+			
+			<div id="help">
+				<h1>Instructions</h1>
+				<ul>
+					<li>Use your keyboard arrows to move the character</li>
+					<li>Use the C key to jump</li>
+					<li>Use the X key to cross over universes</li>
+				</ul>
+			</div>
+		</div>
+    </body>
+</html>
