@@ -77,7 +77,7 @@ var PlayerEntity = me.ObjectEntity.extend(
 			
 			me.game.collisionMap = me.game.currentLevel.getLayerByName("collision_f");
 			this.spirit = false;
-			this.setVelocity(2.5, 14);
+			this.setVelocity(2.5, 14); 
 			//this.setCurrentAnimation("soulOut", "stand");
 			this.doChangeState("soulOut");
 			this.lastTime = new Date().getTime();
