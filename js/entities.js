@@ -17,7 +17,7 @@ var PlayerEntity = me.ObjectEntity.extend(
 		this.parent(x, y , settings);
 
 		// set the walking & jumping speed
-		this.setVelocity(2, 12);
+		this.setVelocity(2.5, 14);
 
 		// adjust the bounding box
 		this.updateColRect(8,42, -1, 0);
@@ -76,7 +76,7 @@ var PlayerEntity = me.ObjectEntity.extend(
 
 			me.game.collisionMap = me.game.currentLevel.getLayerByName("collision_f");
 			this.spirit = false;
-			this.setVelocity(2, 13);
+			this.setVelocity(2.5, 14);
 			//this.setCurrentAnimation("soulOut", "stand");
 			this.doChangeState("soulOut");
 			this.lastTime = new Date().getTime();
