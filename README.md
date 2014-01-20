@@ -18,8 +18,3 @@ In order to travel between worlds, his ourosborus amulet must be almost at fullc
  - Use X for changing worlds
 
 
-## Screenshots
-
-![Alt text](http://globalgamejam.org/sites/default/files/uploads/2012/17650/ss.png?1327855972)
-
-
